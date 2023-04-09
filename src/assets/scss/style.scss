@@ -1,3 +1,4 @@
+@import "colorVariabel";
 @import "mixins/banner";
 @include bsBanner("");
 
@@ -43,7 +44,6 @@
 @import "spinners";
 @import "offcanvas";
 @import "placeholders";
-
 // Helpers
 @import "helpers";
 
@@ -197,5 +197,41 @@ section {
         transform: scale(1);
       }
     }
+  }
+}
+.testimonial-hero,
+.testimonial-hero img {
+  width: 365px;
+  height: 500px;
+}
+
+footer {
+  border-top: 1px solid $gray-200;
+  padding-top: 50px;
+
+  .brand-tagline {
+    margin-top: 8px;
+    color: #b0b0b0;
+    font-weight: 300;
+  }
+  li {
+    list-style: none;
+  }
+  .list-group-item {
+    padding: 0.3125rem 0;
+    border: 0;
+    a,
+    span {
+      color: $gray-500;
+      font-weight: 300;
+    }
+    a :hover {
+      color: $gray-800;
+    }
+  }
+  .copyrights {
+    margin: 50px 0;
+    font-weight: 300;
+    color: $gray-500;
   }
 }
